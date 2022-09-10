@@ -1,0 +1,44 @@
+.others {
+    margin-top: 120px;
+}
+
+.others__title {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 130%;
+    text-transform: uppercase;
+    opacity: 0.1;
+    width: 1330px;
+    margin: 0 auto;
+}
+
+.others__title p::first-child {
+    align-self: flex-end;
+}
+
+.others__title p::last-child {
+    text-align: right;
+}
+
+.others__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.list {
+}
+.list__element {
+    padding: 0;
+}
+.element {
+}
+.element__link {
+    padding: 0;
+}
+.element__image {
+    width: 100%;
+}
+.others__choose-btn {
+}
+.btn {
+}

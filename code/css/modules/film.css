@@ -1,0 +1,131 @@
+.film {
+    margin-top: 60px;
+}
+
+.film__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.film__image {
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.film__info {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.film__title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.05em;
+    margin-right: 38px;
+}
+
+.film__tagline {
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.film__watch {
+    background-color: var(--color-second);
+    width: 375px;
+    height: 72px;
+    font-size: 18px;
+    line-height: 22px;
+    transition: all .2s;
+}
+
+.film__play {
+    text-align: center;
+    background-color: var(--color-second);
+    background-image: url(../../img/play.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 104px;
+    height: 72px;
+    transition: all .2s;
+}
+
+.film__watch:hover, .film__play:hover {
+    background-color: var(--color-primary);
+}
+
+@media (max-width: 1280px) {
+    .film__title {
+        margin-right: auto;
+    }
+
+    .film__tagline {
+        order: 1;
+        flex-basis: 60%;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .film__play {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .film__title {
+        font-size: 50px;
+    }
+
+    .film__watch {
+        margin-top: 8px;
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .film__play {
+        height: 50px;
+        width: 70px;
+        background-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .film__container {
+        gap: 15px;
+    }
+
+    .film__tagline {
+        order: 0;
+        flex-basis: 100%;
+        margin-top: -10px;
+    }
+
+    .film__title {
+        font-size: 38px;
+    }
+
+    .film__watch {
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    .film__play {
+        height: 50px;
+        width: 70px;
+        background-size: 20px;
+    }
+}
